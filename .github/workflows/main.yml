@@ -1,1 +1,15 @@
+- name :Dependencies
+run: dotnet restore
+working-directory:< Project
+Name>
 
+#Run Tests
+- name: Unit Test
+run: dotnet test
+working- directory:<Project
+Name>
+#Build the project
+- name: Project Build
+run: dotnet build -- configuration 
+release
+working-directory:<Project Name>
